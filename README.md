@@ -1,6 +1,6 @@
 # Simple ToDo App for Android
 
-![alt tag](https://raw.github.com/lita/SimpleToDo/master/CodePath_Assignment.gif)
+![alt tag](https://github.com/lita/SimpleToDoApp/blob/master/CodePath_Assignment.gif)
 
 ### Features
 
@@ -10,4 +10,6 @@
     * The edit page focuses on the edit text box.
     * Old value is propagated into the edit text box and the cursor starts at the end.
 * Will persist the data entered into the app.
+* When a user enters an empty item, we don't add it to the list.
+* When a user enters an empty string in edit mode, that item gets deleted.
 

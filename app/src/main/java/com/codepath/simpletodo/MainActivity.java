@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
     public void onAddItem(View v) {
         EditText etNewItem = (EditText) findViewById(R.id.etNewItem);
         String itemText = etNewItem.getText().toString();
+        if (itemText.isEmpty()) {
+            return;
+        }
         itemsAdapter.add(itemText);
         etNewItem.setText("");
         writeItems();
@@ -97,7 +100,11 @@ public class MainActivity extends AppCompatActivity {
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
             String itemText = data.getExtras().getString(EDIT_ITEM_VALUE);
             int pos = data.getExtras().getInt(EDIT_ITEM_POS, 0);
-            items.set(pos, itemText);
+            if (itemText.isEmpty()) {
+                items.remove(pos);
+            } else {
+                items.set(pos, itemText);
+            }
             writeItems();
             itemsAdapter.notifyDataSetChanged();
         }
