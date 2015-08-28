@@ -1,6 +1,6 @@
 # Simple ToDo App for Android
 
-![alt tag](https://raw.github.com/lita/SimpleToDo/master/CodePath_Assignment.gif)
+![alt tag](https://github.com/lita/SimpleToDoApp/blob/master/CodePath_Assignment.gif)
 
 ### Features
 
