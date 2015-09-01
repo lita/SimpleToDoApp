@@ -20,3 +20,4 @@
 
 ### To-Do
 * Rather than saving to file, save to an SQLite Database.
+* Improve the style of the app. Make the Edit Dialog more visually appealing.
