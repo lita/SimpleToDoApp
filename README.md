@@ -18,3 +18,5 @@
 * When a user enters an empty item, we don't add it to the list.
 * When a user enters an empty string in edit mode, that item gets deleted.
 
+### To-Do
+* Rather than saving to file, save to an SQLite Database.
